@@ -3,14 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
 }
+
+/* CONTAINER */
 
 .container{
   width: 100%;
   margin: auto;
 }
+
+/* HEADER */
+
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+header nav{
+  position: absolute;
+  right: 0;
+}
+
+header nav ul li{
+  display: inline-block;
+  list-style: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+header nav ul li:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a{
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+}
+
+/* /HEADER */
+
+/* BOX SCARPE */
 
 .box{
   width: 100%;
@@ -21,9 +69,11 @@ body{
 #shoes1{
   background-color: red;
 }
+
 #shoes2{
   background-color: green;
 }
+
 #shoes3{
   background-color: yellow;
 }
@@ -37,15 +87,15 @@ body{
 }
 
 .box img{
-  width: 100%;
+  width: 100vh;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -70%);
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
+
 .box h1{
-  width: 100%;
-  text-align: center;
+  width: 100vh;
   text-transform: uppercase;
   font-size: 6.5vh;
   color: yellow;
@@ -59,3 +109,6 @@ body{
   color: green;
 }
 
+/*  /BOX SCARPE */
+
+/* /CONTAINER */
