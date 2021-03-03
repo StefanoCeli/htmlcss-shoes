@@ -15,38 +15,37 @@ body{
 
 /* HEADER */
 
-header{
+
+header nav{
   position: fixed;
   z-index: 1;
   width: 100%;
 }
-
-header nav{
-  position: absolute;
-  right: 0;
+header nav ul{
+  float: right;
 }
 
 header nav ul li{
-  display: inline-block;
+  float: left;
   list-style: none;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-top: 20px;
-  background-color: #fff;
-  cursor: pointer;
 }
 
-header nav ul li:hover{
+header nav ul li:hover a{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a{
   text-decoration: none;
-  display: inline-block;
+  display: block;
   width: 50px;
   height: 50px;
   line-height: 50px;
   color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 /* /HEADER */
